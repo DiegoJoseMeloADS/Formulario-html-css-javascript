@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1><span>Form</span>Diego</h1>
+      <!--Formulário-->
+      <form method="Post" action="#">
+        <div class="campo">
+          <label for="fnome"><strong>Nome</strong></label>
+          <input
+            type="text"
+            name="fnome"
+            placeholder=" Digite seu nome"
+            required
+            id="Cnome"
+          />
+          <br />
+        </div>
+        <div class="campo-senha">
+          <label for="fsenha"><strong>Senha</strong></label>
+          <input
+            type="password"
+            name="fsenha"
+            placeholder=" Digite sua senha"
+            required
+            id="Csenha"
+          />
+          <br />
+        </div>
+        <div class="campo-email">
+          <label for="femail"><strong>Email</strong></label>
+          <input
+            type="email"
+            name="femail"
+            placeholder=" Example@hotmail.com"
+            required
+            id="Cemail"
+          />
+          <br />
+          <br />
+        </div>
+        <div class="sexo">
+          <label for="sexoTexto"><strong>Sexo</strong></label>
+          <input type="radio" name="sexo" value="masc" checked />
+          <label for="sexo">Masculino</label>
+          <input type="radio" name="sexo" value="fem" />
+          <label for="sexo">Feminino</label>
+          <br />
+        </div>
+        <div class="formacao">
+          <label for="formacacao"><strong>Formação</strong></label>
+          <select name="formacao" id="formacao">
+            <option selected disabled value="">Selecione</option>
+            <option value="Fundamental_incompleto">
+              Fundamental incompleto
+            </option>
+            <option value="Fundamental_completo">Fundamental completo</option>
+            <option value="Ensino médio_incompleto">
+              Ensino médio incompleto
+            </option>
+            <option value="Ensiono médio_completo">
+              Ensino médio completo
+            </option>
+          </select>
+          <br />
+        </div>
+        <input
+          type="button"
+          value="Enviar"
+          name="enviar"
+          class="button"
+          onclick="verificaCampo()"
+        />
+        <input
+          type="reset"
+          value="Apagar"
+          name="apagar"
+          class="button"
+          onclick="resetaCampo()"
+        />
+      </form>
+      <img
+        src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+        alt="Homem mexendo no computador"
+      />
+    </div>
+  </body>
+</html>
