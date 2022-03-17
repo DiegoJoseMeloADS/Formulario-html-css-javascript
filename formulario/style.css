@@ -1,0 +1,115 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*font*/
+body {
+  font: 500 1em 'Fredoka', sans-serif;
+}
+/*variavel para mudar a cor da página*/
+:root {
+  --cor: #59429d;
+}
+/*mudar a cor de uma parte do h1*/
+span {
+  color: var(--cor);
+}
+/*titulo*/
+h1 {
+  margin-left: 1.5em;
+  margin-top: 1em;
+}
+/*imagem*/
+img {
+  position: relative;
+  z-index: 100;
+  width: 51%;
+  height: 100%;
+  margin-top: -25.6em;
+  margin-left: 24.5em;
+}
+/*container do formulario*/
+.container {
+  margin-top: 10rem;
+  margin-left: 35.5rem;
+  width: 50rem;
+  height: 30rem;
+  border: black solid 1px;
+}
+/*textos como senha nome e email*/
+label {
+  margin-left: 0.62rem;
+}
+
+/*posicionamento dos labels , inputs e selects*/
+.campo {
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.campo label {
+  margin-bottom: 0.2em;
+  display: block;
+  margin-top: 3.5em;
+  margin-left: 1em;
+}
+
+.campo input {
+  margin-left: 1.5em;
+  margin-top: 4em;
+  width: 25%;
+  border-color: var(--cor);
+}
+
+.campo-senha input {
+  margin-top: 1em;
+  width: 25%;
+  margin-left: 1em;
+  height: 2em;
+  border-color: var(--cor);
+}
+
+.campo-senha label {
+  margin-left: 1em;
+}
+
+.campo-email input {
+  margin-top: 1.8em;
+  width: 25%;
+  margin-left: 1.2em;
+  height: 1.8em;
+  border-color: var(--cor);
+}
+
+.campo-email label {
+  margin-left: 1em;
+}
+
+.sexo input {
+  margin-left: 1.2em;
+}
+
+.sexo label {
+  margin-left: 1em;
+}
+
+.formacao {
+  margin-top: 1.5em;
+  margin-left: 0.4em;
+}
+/*botão posição,tamanho e cor */
+.button {
+  float: left;
+  align-content: center;
+  margin-top: 3em;
+  margin-left: 2.5rem;
+  width: 10%;
+  height: 25%;
+  background-color: var(--cor);
+  color: white;
+  border-radius: 2px;
+  border: black 1px solid;
+  font: 500 1em 'Fredoka', sans-serif;
+}
